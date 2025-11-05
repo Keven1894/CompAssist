@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: local-computer-assistant:latest
+    container_name: local-computer-assistant
+    volumes:
+      # Mount host system for inspection (read-only where possible)
+      - /:/host:ro
+      # Mount scripts for execution
+      - ./scripts:/scripts:ro
+      # Mount config
+      - ./config:/config:ro
+      # Data and logs
+      - ./data:/app/data
+      - ./logs:/app/logs
+    privileged: true
+    network_mode: host
+    environment:
+      - PLATFORM=windows
+      - LOG_LEVEL=INFO
+    stdin_open: true
+    tty: true
+    command: python src/main.py
+
+

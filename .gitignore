@@ -1,0 +1,78 @@
+# .gitignore for Local Computer Assistant
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs (keep directory structure, ignore contents)
+logs/*
+!logs/.gitkeep
+*.log
+
+# Data (keep directory structure, ignore contents)
+data/*
+!data/.gitkeep
+*.db
+*.sqlite
+*.json.backup
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Configuration
+config/user_*.yaml
+!config/user_example.yaml
+*.env
+.env.local
+
+# Temporary status files
+*_STATUS.md
+*_COMPLETE.md
+*_SETUP.md
+*_ORGANIZATION.md
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+

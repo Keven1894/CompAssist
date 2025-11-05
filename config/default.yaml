@@ -1,0 +1,75 @@
+# Default configuration for the Local Computer Assistant
+
+# Platform-specific settings
+platform:
+  windows:
+    package_manager: winget  # Options: winget, chocolatey, manual
+    auto_updates: true
+  
+  linux:
+    package_manager: auto  # Options: auto, apt, yum, dnf
+    auto_updates: true
+
+# Software packages to install
+software:
+  packages:
+    - name: Git
+      type: direct_download
+      url: https://git-scm.com/download/win
+      installer: Git-installer.exe
+      silent_install: false
+      description: Git version control system
+    - python
+    - docker
+    - vscode
+    # Add more packages as needed
+
+# System settings
+settings:
+  firewall:
+    enabled: true
+  
+  updates:
+    check_interval_days: 7
+    auto_install: false
+
+# Development environment
+environment:
+  variables:
+    # Add environment variables here
+    # EXAMPLE: JAVA_HOME: /usr/lib/jvm/java-11-openjdk
+
+# Problem detection thresholds
+thresholds:
+  disk_space_warning: 80  # Percentage
+  disk_space_critical: 90  # Percentage
+  memory_warning: 85  # Percentage
+  memory_critical: 95  # Percentage
+
+# Use cases (for future expansion)
+use_cases:
+  development:
+    packages:
+      - git
+      - python
+      - nodejs
+      - docker
+      - vscode
+  
+  art_design:
+    packages:
+      - gimp
+      - inkscape
+      - blender
+  
+  study:
+    packages:
+      - libreoffice
+      - zoom
+  
+  financial:
+    packages:
+      - libreoffice-calc
+      # Add financial software as needed
+
+

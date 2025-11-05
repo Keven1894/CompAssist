@@ -1,0 +1,57 @@
+# User-specific configuration template
+# Copy this file to config/user_<yourname>.yaml and customize it
+
+# Platform-specific settings
+platform:
+  windows:
+    package_manager: winget  # Options: winget, chocolatey, manual
+    auto_updates: true
+  
+  linux:
+    package_manager: auto  # Options: auto, apt, yum, dnf
+    auto_updates: true
+
+# Software packages to install
+software:
+  packages:
+    # Example: Direct download package
+    # - name: ExampleApp
+    #   type: direct_download
+    #   url: https://example.com/download
+    #   installer: setup.exe
+    #   silent_install: false
+    #   description: Example application
+    
+    # Example: Standard package manager installation
+    # - git
+    # - python
+    # - docker
+
+# System settings
+settings:
+  firewall:
+    enabled: true
+  
+  updates:
+    check_interval_days: 7
+    auto_install: false
+
+# Development environment
+environment:
+  variables:
+    # Add environment variables here
+    # EXAMPLE: JAVA_HOME: /usr/lib/jvm/java-11-openjdk
+
+# Problem detection thresholds
+thresholds:
+  disk_space_warning: 80  # Percentage
+  disk_space_critical: 90  # Percentage
+  memory_warning: 85  # Percentage
+  memory_critical: 95  # Percentage
+
+# Docker setup tools
+docker:
+  install_docker_desktop: true
+  docker_desktop_url: https://www.docker.com/products/docker-desktop/
+  verify_installation: true
+
