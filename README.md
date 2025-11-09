@@ -113,6 +113,11 @@ local-computer-assistant/
 
 ## Documentation
 
+📖 **New to CompAssist?** Start with:
+- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Comprehensive project overview
+- **[INDEX.md](INDEX.md)** - Complete project index and navigation guide
+- **[docs/getting-started/installation.md](docs/getting-started/installation.md)** - Installation guide
+
 See `docs/` directory for detailed documentation organized by topic:
 
 ### Getting Started

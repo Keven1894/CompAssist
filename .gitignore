@@ -69,6 +69,7 @@ config/user_*.yaml
 *_COMPLETE.md
 *_SETUP.md
 *_ORGANIZATION.md
+.project-status/
 
 # Test coverage
 .coverage

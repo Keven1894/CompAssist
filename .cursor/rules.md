@@ -171,12 +171,26 @@
 
 ## Quick Reference
 
-- **Main Entry**: `src/main.py`
+### Key Files and Directories
+- **Main Entry**: `src/main.py` (see `/src/README.md`)
+- **Configuration**: `config/default.yaml` (see `/config/README.md`)
+- **Documentation**: `docs/README.md` (comprehensive index)
+- **Scripts**: `scripts/` (see `/scripts/README.md`)
+- **Project Summary**: `/PROJECT_SUMMARY.md` (complete overview)
+
+### Common Commands
 - **Check Environment**: `py src/main.py check`
-- **Setup System**: `py src/main.py setup --config config/default.yaml`
+- **Setup System**: `py src/main.py setup --config config/user_example.yaml`
 - **API Server**: `py src/api/server.py`
-- **Documentation**: `docs/README.md`
-- **Configuration**: `config/default.yaml`
+- **MCP Server**: `py src/api/mcp_server.py`
+- **Diagnose**: `py src/main.py diagnose`
+- **Fix Issues**: `py src/main.py fix`
+
+### Documentation Paths
+- **Getting Started**: `/docs/getting-started/` (installation, quickstart)
+- **API Docs**: `/docs/api/` (REST API, MCP protocol)
+- **Architecture**: `/docs/architecture/` (design, structure)
+- **User Guides**: `/docs/guides/` (specific tool installations)
 
 ## Version Control
 

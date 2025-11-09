@@ -27,7 +27,13 @@ This directory contains all documentation for the Local Computer Assistant.
 
 - **[Docker Installation](guides/docker-installation.md)** - Installing Docker Desktop
 - **[Git Installation](guides/git-installation.md)** - Installing Git version control
+- **[Node.js Installation](guides/nodejs-installation.md)** - Installing Node.js (native and Docker)
 - **[Lightshot Installation](guides/lightshot-installation.md)** - Installing Lightshot screen capture tool
+
+## 🔧 Troubleshooting
+
+- **[Windows Security Issues](troubleshooting/windows-security-issues.md)** - LSA Protection, DLL blocking, antivirus issues
+- **[Troubleshooting Index](troubleshooting/README.md)** - Common issues and solutions
 
 ## 📋 Quick Reference
 
